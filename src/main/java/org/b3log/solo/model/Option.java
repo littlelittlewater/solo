@@ -437,7 +437,7 @@ public final class Option {
         /**
          * Default external relevant articles display count.
          */
-        public static final int DEFAULT_EXTERNAL_RELEVANT_ARTICLES_DISPLAY_COUNT = 5;
+        public static final int DEFAULT_EXTERNAL_RELEVANT_ARTICLES_DISPLAY_COUNT = 0;
 
         /**
          * Most view articles display count.
