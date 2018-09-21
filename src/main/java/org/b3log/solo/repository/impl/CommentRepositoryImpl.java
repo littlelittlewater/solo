@@ -118,7 +118,7 @@ public class CommentRepositoryImpl extends AbstractRepository implements Comment
     public List<JSONObject> getComments(final String onId, final int currentPageNum, final int pageSize)
             throws RepositoryException {
         final Query query = new Query().
-                addSort(Keys.OBJECT_ID, SortDirection.DESCENDING).
+                addSort(Keys.OBJECT_ID, SortDirection.ASCENDING).
                 setFilter(new PropertyFilter(Comment.COMMENT_ON_ID, FilterOperator.EQUAL, onId)).
                 setCurrentPageNum(currentPageNum).setPageSize(pageSize).setPageCount(1);
 
